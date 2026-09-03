@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --background: #10140f;
+  --foreground: #f3efe4;
+  --cream: #f3efe4;
+  --muted: #c4bba8;
+  --faint: #8b8474;
+  --line: #2b3226;
+  --raised: #161b14;
+  --card: #1b2118;
+  --emerald: #3f9d75;
+  --emerald-ink: #0c1a14;
+  --amber: #d4a24c;
+  --rose: #c46a58;
+  --ok: #cfe4b8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--cream);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-raised: var(--raised);
+  --color-card: var(--card);
+  --color-emerald: var(--emerald);
+  --color-emerald-ink: var(--emerald-ink);
+  --color-amber: var(--amber);
+  --color-rose: var(--rose);
+  --color-ok: var(--ok);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-source-serif);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(900px 520px at 88% -12%, color-mix(in srgb, var(--emerald) 16%, transparent), transparent 58%),
+    radial-gradient(700px 400px at 8% 0%, color-mix(in srgb, var(--amber) 7%, transparent), transparent 52%),
+    var(--background);
+  color: var(--foreground);
+  min-height: 100%;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--emerald) 40%, transparent);
+  color: var(--cream);
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--cream);
+  padding: 0.7rem 1rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus-visible {
+  border-color: var(--emerald);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-emerald {
+  background: var(--emerald);
+  border-color: var(--emerald);
+  color: var(--emerald-ink);
+}
+
+.btn-rose {
+  border-color: color-mix(in srgb, var(--rose) 70%, var(--line));
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+.stamp {
+  border: 1px dashed var(--emerald);
+  padding: 0.85rem 1rem;
+  background:
+    repeating-linear-gradient(
+      -12deg,
+      #152018,
+      #152018 8px,
+      #111811 8px,
+      #111811 16px
+    );
+}
+
+pre,
+code,
+textarea,
+table {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+textarea {
+  width: 100%;
+  min-height: 9rem;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  background: #0d110c;
+  color: var(--cream);
+  resize: vertical;
+}
