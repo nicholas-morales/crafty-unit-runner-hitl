@@ -1,0 +1,17 @@
+{
+  "peanut_block": true,
+  "notes": [
+    {
+      "id": "CR-02",
+      "allergen": "peanut",
+      "cast": "company-wide",
+      "action": "Peanut block remains. No peanut butter cups, no trail mix with peanuts."
+    },
+    {
+      "id": "CR-03",
+      "allergen": "strawberry",
+      "cast": "#6 Quinn Alvarez / Ada Cho",
+      "action": "Pull strawberry garnish. Label the fruit tray. Craft does not serve unlabeled berries."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "vendor": "Demo Grip Co",
+  "quote_id": "DG-4092-REV2",
+  "source": "email/quote",
+  "terms": "Net 30",
+  "currency": "USD",
+  "contact": "ops@demo-grip.example",
+  "coi_on_file": true,
+  "notes": "Email quote path. Same HITL as the batch drafts. 2x LED panel $150/day x3 + generator $200/day x3 = $1500.",
+  "lines": [
+    {
+      "sku": "LED-PANEL-2K",
+      "description": "LED panel",
+      "qty": 2,
+      "unit": "day",
+      "rate": 150,
+      "days": 3,
+      "catalog_rate": 150
+    },
+    {
+      "sku": "GEN-2K",
+      "description": "generator",
+      "qty": 1,
+      "unit": "day",
+      "rate": 200,
+      "days": 3,
+      "catalog_rate": 200
+    }
+  ]
+}

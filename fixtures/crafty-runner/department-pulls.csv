@@ -1,0 +1,9 @@
+dept,sku,item,qty,unit,note,plant
+Crafty,WTR-CASE,Spring water cases,8,case,Warehouse has no dock ice cart — overpack water,CR-04
+Crafty,ICE-BAG,Bagged ice,12,bag,Replace dock ice. Van B cooler only,CR-04
+Crafty,COF-KIT,Early coffee kit,1,kit,Crafty 05:45 before 06:30 general,CR-05
+Crafty,PNUT-BLK,Peanut-free snack swap,1,bin,Peanut block remains in force,CR-02
+Crafty,BERRY-LAB,Labeled fruit (no strawberry garnish),2,tray,Quinn Alvarez / Ada Cho strawberry allergy,CR-03
+Unit,VAN-B-RST,Van B restock tote,1,tote,Stage at Warehouse Glendale — not Dock San Pedro,CR-06
+Unit,FUEL-SKIP,Skip San Pedro fuel stop,0,stop,Unit stays inland. No harbor fuel run,CR-01
+Unit,PAX-42,Passenger water / extras for 42,42,head,Headcount 42 (was 48 on Day 12),CR-07

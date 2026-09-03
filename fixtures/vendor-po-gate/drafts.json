@@ -1,0 +1,115 @@
+{
+  "policy": {
+    "approve_under": 2000,
+    "dual_escalate_over": 5000,
+    "catalog_flag_pct": 40
+  },
+  "drafts": [
+    {
+      "id": "PO-DEMO-1001",
+      "vendor": "Demo Grip Co",
+      "quote_id": "DG-1001",
+      "terms": "Net 15",
+      "contact": "ops@demo-grip.example",
+      "coi_on_file": true,
+      "recommended": "approve",
+      "reason": "Under $2k and COI on file.",
+      "flags": ["VP-01", "VP-04"],
+      "lines": [
+        {
+          "sku": "STINGER-8",
+          "description": "stinger kit",
+          "qty": 1,
+          "unit": "day",
+          "rate": 130,
+          "days": 5,
+          "catalog_rate": 130
+        }
+      ]
+    },
+    {
+      "id": "PO-DEMO-1002",
+      "vendor": "Harbor Night Electric",
+      "quote_id": "HNE-220",
+      "terms": "Net 30",
+      "contact": "desk@harbor-night-electric.example",
+      "coi_on_file": true,
+      "recommended": "escalate",
+      "reason": "Over $5k — dual UPM + Producer stamp required. Escalate cannot set sent.",
+      "flags": ["VP-03", "VP-04", "VP-07"],
+      "lines": [
+        {
+          "sku": "GEN-120",
+          "description": "120k generator",
+          "qty": 1,
+          "unit": "day",
+          "rate": 1593,
+          "days": 4,
+          "catalog_rate": 1500
+        }
+      ]
+    },
+    {
+      "id": "PO-DEMO-1003",
+      "vendor": "Craft Table Co",
+      "quote_id": "CTC-88",
+      "terms": "Due on receipt",
+      "contact": "hello@craft-table.example",
+      "coi_on_file": false,
+      "recommended": "reject",
+      "reason": "COI missing. Reject cannot set sent.",
+      "flags": ["VP-01", "VP-05"],
+      "lines": [
+        {
+          "sku": "CRAFT-DAY",
+          "description": "craft day rate",
+          "qty": 1,
+          "unit": "day",
+          "rate": 354,
+          "days": 3,
+          "catalog_rate": 350
+        }
+      ]
+    },
+    {
+      "id": "PO-DEMO-1004",
+      "vendor": "Demo Grip Co",
+      "quote_id": "DG-LED-40",
+      "terms": "Net 30",
+      "contact": "ops@demo-grip.example",
+      "coi_on_file": true,
+      "recommended": "escalate",
+      "reason": "COI on file but LED kit is +40% vs catalog. Escalate for price check.",
+      "flags": ["VP-02", "VP-04", "VP-06"],
+      "lines": [
+        {
+          "sku": "LED-KIT-6",
+          "description": "LED kit",
+          "qty": 2,
+          "unit": "day",
+          "rate": 350,
+          "days": 3,
+          "catalog_rate": 250
+        },
+        {
+          "sku": "STAND-C",
+          "description": "combo stand",
+          "qty": 4,
+          "unit": "day",
+          "rate": 73,
+          "days": 3,
+          "catalog_rate": 70
+        },
+        {
+          "sku": "EXP-TAPE",
+          "description": "expendable tape",
+          "qty": 1,
+          "unit": "day",
+          "rate": 2,
+          "days": 1,
+          "catalog_rate": 2
+        }
+      ]
+    }
+  ]
+}

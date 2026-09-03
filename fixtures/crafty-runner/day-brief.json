@@ -1,0 +1,16 @@
+{
+  "production": "Harbor Night",
+  "day_label": "Day 13",
+  "date": "2026-09-04",
+  "location": "Warehouse Glendale",
+  "prior_location": "Dock San Pedro",
+  "general_call": "06:30",
+  "crafty_call": "05:45",
+  "wrap": "18:45",
+  "headcount": 42,
+  "prior_headcount": 48,
+  "unit_van_b": "Warehouse Glendale",
+  "runner": "demo.runner@harbor-night.example",
+  "coordinator": "demo.pc@harbor-night.example",
+  "notes": "Day 13 unit move. Crafty and unit shopping stay a draft until the coordinator stamps Approve. No live runner SMS."
+}
